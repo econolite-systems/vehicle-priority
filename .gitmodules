@@ -1,0 +1,9 @@
+[submodule "common"]
+	path = common
+	url = ../common
+[submodule "entities"]
+	path = entities
+	url = ../entities
+[submodule "config"]
+	path = config
+	url = ../config
