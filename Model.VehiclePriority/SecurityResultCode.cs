@@ -1,0 +1,42 @@
+// SPDX-License-Identifier: MIT
+// Copyright: 2023 Econolite Systems, Inc.
+namespace Econolite.Ode.Models.VehiclePriority;
+
+public enum SecurityResultCode {
+    success,
+    unknown,
+    inconsistentInputParameters,
+    spduParsingInvalidInput,
+    spduParsingUnsupportedCriticalInformationField,
+    spduParsingCertificateNotFound,
+    spduParsingGenerationTimeNotAvailable,
+    spduParsingGenerationLocationNotAvailable,
+    spduCertificateChainNotEnoughInformationToConstructChain,
+    spduCertificateChainChainEndedAtUntrustedRoot,
+    spduCertificateChainChainWasTooLongForImplementation,
+    spduCertificateChainCertificateRevoked,
+    spduCertificateChainOverdueCRL,
+    spduCertificateChainInconsistentExpiryTimes,
+    spduCertificateChainInconsistentStartTimes,
+    spduCertificateChainInconsistentChainPermissions,
+    spduCryptoVerificationFailure,
+    spduConsistencyFutureCertificateAtGenerationTime,
+    spduConsistencyExpiredCertificateAtGenerationTime,
+    spduConsistencyExpiryDateTooEarly,
+    spduConsistencyExpiryDateTooLate,
+    spduConsistencyGenerationLocationOutsideValidityRegion,
+    spduConsistencyNoGenerationLocation,
+    spduConsistencyUnauthorizedPSID,
+    spduInternalConsistencyExpiryTimeBeforeGenerationTime,
+    spduInternalConsistencyextDataHashDoesntMatch,
+    spduInternalConsistencynoExtDataHashProvided,
+    spduInternalConsistencynoExtDataHashPresent,
+    spduLocalConsistencyPSIDsDontMatch,
+    spduLocalConsistencyChainWasTooLongForSDEE,
+    spduRelevanceGenerationTimeTooFarInPast,
+    spduRelevanceGenerationTimeTooFarInFuture,
+    spduRelevanceExpiryTimeInPast,
+    spduRelevanceGenerationLocationTooDistant,
+    spduRelevanceReplayedSpdu,
+    spduCertificateExpired
+}

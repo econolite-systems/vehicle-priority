@@ -1,0 +1,65 @@
+// SPDX-License-Identifier: MIT
+// Copyright: 2023 Econolite Systems, Inc.
+{
+  "SrmMessageContent": {
+    "metadata": {
+      "utctimestamp": "2016-05-25T15:00:00.000Z"
+    },
+    "srm": {
+      "sequenceNumber": 0,
+      "timeStamp": 0,
+      "seconds": 0,
+      "requestor": {
+        "id": {
+          "vehicleId": "",
+          "stationId": 0
+        },
+        "name": "",
+        "routeName": "",
+        "transitSchedule": 0,
+        "transitOccupancy": 0,
+        "transitStatus": {
+          "bitsUsed": 0,
+          "bits": ""
+        },
+        "type": {
+          "role": 0
+        },
+        "position": {
+          "heading": 0,
+          "position": {
+            "latitude": 0,
+            "longitude": 0
+          },
+          "speed": 0
+        }
+      },
+      "requests": 
+      [
+        {
+          "request": {
+            "id": {
+              "region": 0,
+              "id": 0
+            },
+            "requestId": 0,
+            "requestType": 0,
+            "inBoundLane": {
+              "lane": 0,
+              "approach": 0,
+              "connection": 0
+            },
+            "outBoundLane": {
+              "lane": 0,
+              "approach": 0,
+              "connection": 0
+            }
+          },
+          "minute": 0,
+          "duration": 0,
+          "second": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<!-- SPDX-License-Identifier: MIT -->
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Econolite.Ode.Domain.VehiclePriority</RootNamespace>
+        <NoWarn>NU1701</NoWarn>
+    <Copyright>2023-&lt;&lt;CURRENT_YEAR&gt;&gt; Econolite Systems, Inc.</Copyright>
+</PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="$(SolutionDir)\common\Helpers\Helpers.csproj" />
+      <ProjectReference Include="$(SolutionDir)\common\Messaging\Messaging.csproj" />
+      <ProjectReference Include="$(SolutionDir)\common\Scheduler\Scheduler.csproj" />
+      <ProjectReference Include="$(SolutionDir)\common\Monitoring\Monitoring.csproj" />
+      <ProjectReference Include="$(SolutionDir)\asn1-j2735\Asn1J2735\Asn1J2735.csproj" />
+      <ProjectReference Include="$(SolutionDir)\asn1-j2735\Domain.Asn1.J2735\Domain.Asn1.J2735.csproj" />
+      <ProjectReference Include="..\Domain.SystemModeller\Domain.SystemModeller.csproj" />
+      <ProjectReference Include="..\Model.VehiclePriority\Model.VehiclePriority.csproj" />
+      <ProjectReference Include="..\Repository.VehiclePriority\Repository.VehiclePriority.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNet.SignalR" Version="2.4.3" />
+      <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+      <PackageReference Include="SignalR.Kafka" Version="1.0.7" />
+      <PackageReference Include="System.Threading.Tasks.Dataflow" Version="6.0.0" />
+    </ItemGroup>
+
+</Project>

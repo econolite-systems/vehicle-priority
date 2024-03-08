@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+<!-- SPDX-License-Identifier: MIT -->
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-Worker-2154C991-AA97-4F15-89A1-6F12941DDC69</UserSecretsId>
+        <RootNamespace>Econolite.Ode.Vehicle.Priority.Worker</RootNamespace>
+    <Copyright>2023 Econolite Systems, Inc.</Copyright>
+</PropertyGroup>
+
+    <PropertyGroup Condition=" '$(RunConfiguration)' == 'Econolite.Vehicle.Priority.Worker' ">
+        <ExternalConsole>true</ExternalConsole>
+    <Copyright>2023 Econolite Systems, Inc.</Copyright>
+</PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+        <PackageReference Include="NLog.Extensions.Hosting" Version="5.0.2" />
+        <PackageReference Include="MongoDB.Driver" Version="2.15.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Remove="NLog.Extensions.Hosting" />
+        <None Remove="MongoDB.Driver" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\common\Messaging\Messaging.csproj" />
+    </ItemGroup>
+</Project>

@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<!-- SPDX-License-Identifier: MIT -->
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>Econolite.Ode.Models.VehiclePriority</RootNamespace>
+        <LangVersion>10</LangVersion>
+        <Nullable>enable</Nullable>
+        <NoWarn>NU1701</NoWarn>
+    <Copyright>2023-&lt;&lt;CURRENT_YEAR&gt;&gt; Econolite Systems, Inc.</Copyright>
+</PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="NetTopologySuite.IO.GeoJSON" />
+        <None Remove="Network\" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="NetTopologySuite.IO.GeoJSON" Version="3.0.0" />
+        <PackageReference Include="UnitOf" Version="1.0.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Network\" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="$(SolutionDir)\entities\Models.Entities\Models.Entities.csproj" />
+      <ProjectReference Include="..\Repository.SystemModeller\Repository.SystemModeller.csproj" />
+    </ItemGroup>
+</Project>

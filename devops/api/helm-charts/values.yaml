@@ -1,0 +1,12 @@
+vehiclePriorityApi:
+  name: ode-vehicle-priority-api
+  imageRepository: cosysdev.azurecr.io/ode-vehicle-priority-api
+  service:
+    port: 80
+  probes:
+    enabled: false
+  ingress:
+    host: api.mound-rd.cosysdev.com
+  kafka:
+    groupid: 'vehicle.priority'
+  resources: {}
