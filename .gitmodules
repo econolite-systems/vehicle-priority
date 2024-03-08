@@ -10,3 +10,6 @@
 [submodule "asn1-j2735"]
 	path = asn1-j2735
 	url = ../asn1-j2735
+[submodule "Econolite.J2735_201603"]
+	path = Econolite.J2735_201603
+	url = ../Econolite.J2735_201603
