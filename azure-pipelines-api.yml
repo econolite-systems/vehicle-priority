@@ -62,9 +62,8 @@ stages:
       vmImage: $(vmImageName)
     steps:
     - checkout: self
-      submodules: true
+      submodules: recursive
       persistCredentials: true
-      fetchDepth: 2
     - checkout: templates
     - task: Bash@3
       displayName: Version Files
